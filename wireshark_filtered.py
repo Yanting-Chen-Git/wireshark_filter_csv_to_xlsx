@@ -10,12 +10,12 @@ from tkinter import messagebox
 
 '''
 # wireshark_filtered.py
-wireshark_filtered_script_path = r'D:\yanting\Desktop\AutotestNode\wireshark_filtered.py' # Call the wireshark_filtered.py script after processing
-keywords = ["219_TEST_00001_20250219101647", "abc"] #filtered file name keywords
+wireshark_filtered_script_path = r'path' # Call the wireshark_filtered.py script after processing
+keywords = ["123", "abc"] #filtered file name keywords
 os.environ['KEYWORDS'] = ','.join(keywords) # Join the keywords into a string and set as an environment variable
-os.environ['WIRESHARK_FILTERED_INPUT_PATH'] = r'E:\ptp_pcap'
-os.environ['WIRESHARK_FILTERED_OUTPUT_PATH'] = r'D:\yanting\Desktop\AutotestNode\testcases\common\integrationtest\hcp5_14p_ptp_captured_packets'
-filter_expr = '((ptp.v2.messagetype == 0x0) && (eth.src == 02:7d:fa:00:10:01)) || ((ptp.v2.messagetype == 0x8) && (eth.src == 02:7d:fa:00:10:01))' # Define the filter expression
+os.environ['WIRESHARK_FILTERED_INPUT_PATH'] = r'path'
+os.environ['WIRESHARK_FILTERED_OUTPUT_PATH'] = r'path'
+filter_expr = '((ptp.v2.messagetype == 0x0) && (eth.src == 00:00:00:00:00:00)) || ((ptp.v2.messagetype == 0x8) && (eth.src == 00:00:00:00:00:01))' # Define the filter expression
 os.environ['FILTER_EXPR'] = filter_expr  # Set the filter expression as an environment variable
 '''
 
