@@ -6,9 +6,9 @@ import win32com.client as win32
 
 '''
 # csv_to_xlsx.py  if only execute csv_to_xlsx.py, please enable below
-csv_to_xlsx_script_path = r'D:\yanting\Desktop\AutotestNode\csv_to_xlsx.py' # Call the csvtoxlsx.py script after main.py completes
-os.environ['CSV_TO_XLSX_INPUT_PATH'] = r'D:\yanting\Desktop\AutotestNode\testcases\common\integrationtest\out\reports_7103001' # Set the source folder (location of CSV files)
-os.environ['CSV_TO_XLSX_OUTPUT_PATH'] = r'D:\yanting\Desktop\AutotestNode\testcases\common\integrationtest\out\reports_7103001\excel' # Set the destination folder (to save the converted Excel files)
+csv_to_xlsx_script_path = r'path' # Call the csvtoxlsx.py script after main.py completes
+os.environ['CSV_TO_XLSX_INPUT_PATH'] = r'path' # Set the source folder (location of CSV files)
+os.environ['CSV_TO_XLSX_OUTPUT_PATH'] = r'path' # Set the destination folder (to save the converted Excel files)
 '''
 
 input_folder = os.environ.get('CSV_TO_XLSX_INPUT_PATH')
